@@ -2,35 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,500&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    html {background-color: #F0F0F0; font-size: 14px;}
+    body { font-family: 'Montserrat', sans-serif; background-color: hsl(30, 38%, 92%); top: 100px; max-width: 1440px; height: 900px; margin: auto; position:relative;  }
+    #container {border-radius: 5%  0% 0% 5%; display: flex; width: 572px; height: 429px; background-color: white; margin: auto; position: relative; top: 200px;font-weight: 500;}
+    .img { float: top; border-radius: 5%  0% 0% 5%; width: 286 px }
+    .item {display: flex-box;  padding: 30px; }
+    h1 {font-weight: 700; font-family:'Fraunces', serif;}
+    .prize {font-weight: 700 ; font-family:'Fraunces', serif; font-size: 30px; color:#427E6A; display: inline-block; padding: 20px 0 20px 0;}
+    .oldPrize {position: relative; top: -5px; text-decoration:line-through ; display: inline-block; margin-right: 15px; margin-left: 10px; }
+    .button {background-color: #427E6A;color: white; padding: 12px 0 12px 0;text-align: center; border-radius: 5px;}
+    .button:hover {background-color: #1A4031;}
+    
+    </style>
+
 </head>
 <body>
+ 
+  <div id="container">
+      <div class="img1">
+        <img src="images/image-product-desktop.jpg" alt="perfumZBiedry" width= '286 px'class="img1" >
+      </div>
+    <div class="item">
+  P E R F U M E<br>
 
-  Preview
-
-  Gabrielle Essence Eau De Parfum
+  <h1>Gabrielle<br> Essence Eau <br>De Parfum<br></h1>
 
   A floral, solar and voluptuous interpretation composed by Olivier Polge, 
   Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="prize"> $149.99</div>
+ 
+  <div class="oldPrize">$169.99</div>
+
+<div class="button">
+  <img src="images/icon-cart.svg" style="margin-right: 8px; height: 12px;">
+  Add to Cart</div>
+  
+ <br>
+  <p style="font-size: 8px; text-align: right;"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <br>Coded by <a href="#">Michał Malewicz</a>.</p>
+   
+ </div>
+</div>
+
 </body>
 </html>
